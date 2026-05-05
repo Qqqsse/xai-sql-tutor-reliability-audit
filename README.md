@@ -16,7 +16,7 @@ The core research question: *Which hint type more effectively prompts students t
 
 The target variable is `adopted` (whether a student acted on the hint), predicted from behavioral features including `hint_latency`, `revision_count`, `db_experience`, and `trust_score`.
 
----
+'''
 
 ## Project Structure
 xai-sql-tutor-reliability-audit/
@@ -31,7 +31,7 @@ xai-sql-tutor-reliability-audit/
 ├── requirements.txt
 └── README.md
 
----
+'''
 
 ## How to Run
 
