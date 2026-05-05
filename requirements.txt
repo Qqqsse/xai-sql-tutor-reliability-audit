@@ -1,0 +1,12 @@
+# To be generated after conda environment setup:
+# pip freeze > requirements.txt
+
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+streamlit
+scipy
+joblib
