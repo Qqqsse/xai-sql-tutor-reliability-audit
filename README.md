@@ -50,6 +50,21 @@ python src/train_model.py
 streamlit run dashboard/app.py
 ```
 
+### 一鍵執行（Windows）
+
+```bash
+run_all.bat
+```
+
+### Makefile（選用）
+
+```bash
+make data
+make train
+make dashboard
+make all
+```
+
 ## 輸出檔案說明
 
 - `outputs/simulated_dataset.csv`：模擬資料集
@@ -63,3 +78,4 @@ streamlit run dashboard/app.py
 - `outputs/feature_importance.png`：特徵重要性圖
 - `outputs/rf_model.joblib`：訓練完成模型
 - `outputs/test_predictions.csv`：測試集逐筆預測結果（供 dashboard 篩選）
+- `outputs/analysis_report.md`：可直接提交的分析報告（繁中）
