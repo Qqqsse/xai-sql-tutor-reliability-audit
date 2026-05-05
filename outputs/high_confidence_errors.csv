@@ -1,0 +1,4 @@
+session_id,hint_condition,db_experience,hint_latency,revision_count,trust_score,model_output,confidence,correct_answer,error_type,possible_source,observable_log
+S_073,actionable,0,7.792472699324318,3,5,1,0.85,0,False Positive,shortcut on db_experience,學生在收到提示後 8 秒送出 edit_code，revision_count=3，最終 task_success=0，可能存在快速嘗試或策略性修改行為。
+S_083,conceptual,1,39.54374761469185,1,5,1,0.91,0,False Positive,hint_condition insensitivity,學生在收到提示後 40 秒送出 edit_code，revision_count=1，最終 task_success=0，可能存在快速嘗試或策略性修改行為。
+S_157,actionable,0,33.90910245834346,4,4,1,0.99,0,False Positive,shortcut on db_experience,學生在收到提示後 34 秒送出 edit_code，revision_count=4，最終 task_success=0，可能存在快速嘗試或策略性修改行為。

@@ -1,0 +1,7 @@
+slice_type,slice_value,n_samples,accuracy,recall_class1
+confidence_group,confidence<0.7,9,0.7777777777777778,1.0
+confidence_group,confidence>=0.7,31,0.8387096774193549,0.9285714285714286
+db_experience,0,27,0.7777777777777778,0.9047619047619048
+db_experience,1,13,0.9230769230769231,1.0
+hint_condition,actionable,20,0.85,1.0
+hint_condition,conceptual,20,0.8,0.875
