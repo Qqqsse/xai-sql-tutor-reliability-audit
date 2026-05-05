@@ -96,7 +96,7 @@ else:
         color_discrete_map={"正確": "green", "錯誤": "red"},
         title="信心分佈圖（依篩選條件）",
     )
-    st.plotly_chart(fig_hist, use_container_width=True)
+    st.plotly_chart(fig_hist, width="stretch")
 
 st.subheader("區塊 3：Reliability Diagram")
 if len(filtered_df) > 1 and filtered_df["actual"].nunique() > 1:
@@ -129,7 +129,7 @@ if len(filtered_df) > 1 and filtered_df["actual"].nunique() > 1:
         xaxis_title="平均預測機率",
         yaxis_title="實際正類比例",
     )
-    st.plotly_chart(fig_cal, use_container_width=True)
+    st.plotly_chart(fig_cal, width="stretch")
 else:
     st.info("目前篩選資料不足以計算校準曲線。")
 
@@ -149,7 +149,7 @@ else:
         labels=dict(color="Recall"),
         title="Subgroup Recall Heatmap",
     )
-    st.plotly_chart(fig_heatmap, use_container_width=True)
+    st.plotly_chart(fig_heatmap, width="stretch")
 
 st.subheader("區塊 5：High-Confidence Errors")
 show_cols = [
@@ -169,7 +169,7 @@ show_cols = [
 if filtered_high_err.empty:
     st.info("目前篩選條件下沒有高信心錯誤樣本。")
 else:
-    st.dataframe(filtered_high_err[show_cols], use_container_width=True)
+    st.dataframe(filtered_high_err[show_cols], width="stretch")
 
 st.subheader("區塊 6：Reject Option 模擬")
 if filtered_df.empty:

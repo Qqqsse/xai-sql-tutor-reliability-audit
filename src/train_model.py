@@ -145,7 +145,7 @@ def main() -> None:
     plt.plot(mean_pred, frac_pos, marker="o", label="Model Calibration")
     plt.plot([0, 1], [0, 1], linestyle="--", color="gray", label="Perfect Calibration")
     plt.title(f"Reliability Diagram (ECE={ece:.3f})")
-    plt.xlabel("平均預測機率")
+    plt.xlabel("Mean Predicted Probability")
     plt.ylabel("Fraction of Positives")
     plt.legend()
     plt.tight_layout()
